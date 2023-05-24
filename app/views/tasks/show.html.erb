@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="m-4"><%= @task.title %></h1>
+  <div class="alert alert-secondary" role="alert">
+    <%= @task.details %>
+  </div>
+  <div class="d-flex ">
+    <input type="checkbox" class="checkboxes" <%= @task.completed ? "checked" : "" %>>
+    <p class="my-auto">  This task is <%= @task.completed ? "completed" : "not completed" %></p>
+  </div>
+  <hr>
+  <i class="fa-solid fa-backward-step"></i> <%= link_to "Back to tasks list", "/tasks" %> |
+  <i class="fa-solid fa-pen-to-square"></i> <%= link_to "Edit task", "/tasks/#{@task.id}/edit" %> |
+  <i class="fa-solid fa-text-slash"></i> <%= link_to "Remove task", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+</div>

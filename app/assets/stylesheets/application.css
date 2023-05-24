@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+
+ul {
+  list-style-type: none
+}
+
+.checkboxes {
+  margin: 10px;
+}
+
+.form-new {
+  padding: 30px;
+}
+
+h1 {
+  padding: 30px;
+}
+
+.links {
+  margin: 20px;
+  text-decoration: none;
+}
+
+.task-deco {
+  color: rgb(98, 98, 12);
+  font-size: 20px;
+}
+
+.redirection {
+  color: rgb(160, 150, 36);
+  border: 1px solid rgb(160, 150, 36);
+  padding: 10px;
+  border-radius: 4px;
+  margin: 40px;
+}
+
+.task-deco:hover {
+  color: rgb(98, 98, 12);
+  font-size: 22px;
+}
+
+.redirection:hover {
+  color: white;
+  border: 1px solid rgb(98, 98, 12);
+  background-color: rgb(98, 98, 12);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sub-container {
+  width: 80vh;
+}

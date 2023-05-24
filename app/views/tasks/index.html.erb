@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="m-4">My tasks (damn)</h1>
+  <div>
+    <ul>
+    <% @tasks.each do |task|  %>
+      <li><input type="checkbox" class="checkboxes" <%= task.completed ? "checked" : "" %>><%= link_to task.title, task_path(task.id), :class => "links task-deco" %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="sub-container">
+    <%= link_to 'Add task', 'tasks/new', :class => "links redirection d-block text-center"%>
+  </div>
+</div>
